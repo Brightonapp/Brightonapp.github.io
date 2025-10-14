@@ -1,57 +1,19 @@
 
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f2f2f2;
-    }
-    header, footer {
-      background-color: #333;
-      color: #fff;
-      padding: 15px;
-      text-align: center;
-    }
-    .contact-section {
-      background: #fff;
-      padding: 30px;
-      text-align: center;
-    }
-    .gallery-section {
-      padding: 20px;
-      text-align: center;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 20px;
-    }
-    .gallery img {
-      width: 250px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-  </style>
-</head>
-<body>
+<section id="contact" style="background:#f0f0f0; padding:40px 20px;">
+  <div style="max-width:600px; margin:auto; background:#fff; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+    <h2 style="text-align:center; margin-bottom:20px;">Contact Me</h2>
+    <p style="text-align:center;">Have a project or idea? Let's connect!</p>
+    
+    <form>
+      <input type="text" placeholder="Your Name" style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;" required>
+      <input type="email" placeholder="Your Email" style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;" required>
+      <textarea placeholder="Your Message" rows="5" style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;" required></textarea>
+      <button type="submit" style="width:100%; padding:12px; background:#222; color:white; border:none; border-radius:5px; cursor:pointer;">Send Message</button>
+    </form>
+  </div>
+</section>
+```
 
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
-
-  <div class="contact-section" id="contacts">
+---

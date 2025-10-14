@@ -1,20 +1,63 @@
-Sawa boss! Nimekuchagulia picha nzuri ya kisasa ya design — inafaa kwa homepage ya website ya ubunifu (design).
+Nice! Tuongeze sasa *muonekano tofauti (design mpya)* kwenye website yako — ili iwe na *rangi nzuri, font safi, layout iliyopangwa kisasa*.
 
-Hii hapa code kamili ya kuongeza picha kwenye site yako:
+1. Andika hii `<style>` section ndani ya `<head>` ya `index.html`:
 
 ```html
-<div style="text-align:center; margin: 30px 0;">
-  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Creative Design Image" style="max-width:90%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" />
-</div>
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+</style>
 ```
 
-Hatua:
-1. *Copy code hii*
-2. Fungua `index.html` kwenye QuickEdit  
-3. Paste sehemu yoyote unayotaka picha ionekane (mfano: chini ya `<body>` au kabla ya footer)  
-4. Hifadhi (`Save`)
-5. Upload tena GitHub kama ulivyofanya mwanzo  
-6. Commit changes
+2. Halafu ndani ya `<body>`, tumia div kama hii:
 
-Baada ya dakika chache, picha itaonekana kwenye website yako!  
-Niambie kama uitafutie nyingine au uiwekeje.
+```html
+<header>Brighton Design Studio</header>
+
+<div class="container">
+  <h2>Welcome to My Design World</h2>
+  <p>This site helps you explore creative and advanced design ideas!</p>
+
+  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Design image" />
+</div>
+
+<footer>&copy; 2025 Brighton Designs</footer>
+```
+
+---

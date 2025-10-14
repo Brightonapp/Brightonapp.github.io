@@ -1,0 +1,61 @@
+
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brighton - Your Design Companion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 40px 20px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2.5em;
+    }
+    p.subheadline {
+      font-size: 1.2em;
+      margin: 0 0 30px;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto 40px;
+    }
+    .feature-item {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 220px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #357ABD;
+    }
+  </style>

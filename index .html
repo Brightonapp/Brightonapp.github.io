@@ -1,47 +1,30 @@
 
 ```html
-<div class="gallery-section">
-  <h2>My Gallery</h2>
-  <div class="gallery">
-    <img src="https://i.imgur.com/YRylphz.jpg" alt="Photo 1" />
-    <img src="https://i.imgur.com/8Y0jYpQ.jpg" alt="Photo 2" />
-    <img src="https://i.imgur.com/cnKIt8K.jpg" alt="Photo 3" />
-  </div>
+<h2>Latest Designs</h2>
+<div class="design-gallery">
+  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Design 1" />
+  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Design 2" />
+  <img src="https://images.unsplash.com/photo-1522199780097-645d8766b67e?auto=format&fit=crop&w=800&q=80" alt="Design 3" />
 </div>
 
 <style>
-  .gallery-section {
-    padding: 20px;
-    text-align: center;
-  }
-  .gallery {
+  .design-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    margin-top: 20px;
   }
-  .gallery img {
-    width: 250px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  .design-gallery img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
   }
-  .gallery img:hover {
+  .design-gallery img:hover {
     transform: scale(1.05);
   }
 </style>
 ```
-
----
-
-Kama unatumia picha zako mwenyewe (GitHub):
-1. Upload picha zako kwenye repo.
-2. Copy link ya picha.
-3. Badilisha `src=""` ndani ya `<img>` na link yako.
-   - Mfano:
-```html
-<img src="https://github.com/username/repo/blob/main/picha.jpg?raw=true" alt="My Image" />
-```
-
-—
-
